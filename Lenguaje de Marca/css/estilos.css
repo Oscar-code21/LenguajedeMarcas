@@ -1,85 +1,116 @@
 *{
     box-sizing: border-box;
-    padding: 0%;
-    font-family: "Arial",sans-serif;
+    padding: 0; /* espacio vacio alrededor del contenido */
+    margin: 0;
 }
 
 
 
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
 header {
-    color: white;
-    background-color:goldenrod;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20% 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
 }
 
-header:hover {
-    color: goldenrod;
-    background-color:white;    
-}
-
-
-img{
-    width: 100px;
+header .logo {
     max-width: 150px;
-    height: auto;
-
 }
 
- header h1 {
-   margin: 0; 
-   
-   padding-left: 20px;
-    
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1; 
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.nav2{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.055);
-    width:100%;
-    justify-content: space-around;
-    padding: 10% 0;
-
-    
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.nav2 ul{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    width: 100px;
-
-}
-
-.nav2 ul li a {
-    color: black;
+nav ul li a  {
+    color: #000;
     text-decoration: none;
     font-weight: bold;
-
 }
 
-.nav2 ul li a:hover{
-    color: gold;
-}
-
-.imagen-contenedor, .imagen2-contenedor{
-    margin: 20px 0;
-    text-align: center;
-}
-
-.imagen-principal{
-    max-width: 100px;
+.imagen-principal img{
+    width: 100px;
     height: auto;
+    display: block;
 }
+
+.productos {
+   
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    gap: 20px; /* separación */
+}
+
+
+
+
+.producto {
+    text-align: center;
+    width: 200px;
+    
+}
+
+.imagen-producto {
+    width: 200px;  /* ancho del cuadrado*/
+    height: 200px;  /* alto del cuadrado */
+     margin-bottom: 10px; 
+}
+
+.imagen-producto img{
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa todo el alto */
+    object-fit: cover; /* Se recorta la imagen */
+    object-position: center; /* Centra la imagen */
+    
+}
+/* Le meto un estilo al precio y la descripción del precio */
+.productos p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.productos span{
+    font-size: 14px;
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
