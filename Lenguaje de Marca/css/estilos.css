@@ -15,22 +15,26 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 2px 0;
     background-color: #000;
     color: #fff;
 }
 
 header .logo {
-    max-width: 100px;
+    max-width: 30%;
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 15px;
-}
+header h1 {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 
+}
+header nav a{
+    display: inline;
+    margin: 0 20px;
+
+}
 
 nav {
     background-color: #222;
@@ -44,13 +48,13 @@ nav ul li {
 }
 
 nav ul li a  {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
 
 .imagen-principal img{
-    width: 100px;
+    width: 80px;
     height: auto;
     display: block;
 }
