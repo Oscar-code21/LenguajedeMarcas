@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear cuenta</title>
     <link rel="stylesheet" href="css/crearcuenta.css">
-
 </head>
 <body>
+    
+    
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="paginaprincipal.html" class="logo-link">
+                    <img src="img/Modashop.png" alt="Versace Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="categorias-links">
+                <ul class="categorias-list">
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Niños</a></li>
+                </ul>
+            </div>
+
+            <div class="header-icons">
+                <a href="#" class="icon-link">
+                    <img src="img/Logos Pollería Simple Negro.png" alt="Me gusta" class="header-icon">
+                </a>
+                <a href="iniciasesion.html" class="icon-link">
+                    <img src="img/Logo inicia sesion.png" alt="Inicia sesión" class="header-icon">
+                </a>
+                <a href="#" class="icon-link">
+                    <img src="img/Logo de cartera.png" alt="Carrito" class="header-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
     <main class="iniciasesion">
         <header>
             <h1>Crear Cuenta</h1>
@@ -23,7 +56,7 @@
                     <input type="email" name="correo_electronico" placeholder="Ingresa tu correo electronico" required> 
                 </article>
                 <article class="form-group">
-                    <label for="Contraseña">Correo electronico</label>
+                    <label for="Contraseña">Contraseña</label>
                     <input type="password" name="Contraseña" placeholder="Ingresa tu Contraseña" required>
                 </article>
                 <article class="form-group">
@@ -33,16 +66,22 @@
                 <button type="submit">Crear Cuenta</button>
             </form>
         </section>
-        <footer class="Login-link">
-            <p>¿Tienes cuenta? <a href="iniciasesion.html">Inicia Sesión</a></p>
-            <ul>
-                <li><a href="#">Contactar</a></li>
-                <li><a href="https://www.versace.com/es/es/avisos-legales/privacy-policy.html">Pólitica de Pivacidad</a></li>
-                <li><a href="https://www.versace.com/es/es/avisos-legales/terms-and-conditions.html">Términos de condiciones</a></li>
-            </ul>
-
-        </footer>
     </main>
+
     
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="footer-info">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="https://www.versace.com/es/es/avisos-legales/terms-and-conditions.html">Términos y condiciones</a></li>
+                    <li><a href="https://www.versace.com/es/es/avisos-legales/privacy-policy.html">Política de privacidad</a></li>
+                    <li><a href="https://www.versace.com/es/es/avisos-legales/cookie-policy.html">Política de cookies</a></li>
+                    <li><a href="FormularioContactar.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
