@@ -1,23 +1,128 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Estilo global para el body */
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Aseguramos que el contenido principal ocupe el espacio restante */
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Estilos para la sección de productos destacados */
+.highlighted-products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer; /* Cambiar el cursor a mano */
+}
+
+/* Hacer que la imagen ocupe el 100% del contenedor */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para el título de cada producto */
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Estilo para el precio del producto */
+.product-item p {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
+
+
+/* Estilos para la sección de categorías */
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-item {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hacer que la imagen ocupe el 100% de su contenedor */
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo para el título de cada categoría */
+.category-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Estilo para los enlaces de categorías */
+.categories a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del contenedor */
+}
+
+/* Efecto al pasar el ratón sobre la categoría */
+.categories .category-item:hover {
+    transform: scale(1.05); /* Agranda ligeramente el contenedor */
+    cursor: pointer; /* Cambia el cursor a mano */
+}
+
+/* Estilos para el header */
 header {
     background-color: #000; 
     padding: 15px 0;
 }
-
 
 .header-container {
     display: flex;
@@ -27,7 +132,6 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 
 .logo-container {
     flex: 1;
@@ -41,7 +145,6 @@ header {
     width: 150px;
     height: auto;
 }
-
 
 .categorias-links {
     flex: 2;
@@ -70,7 +173,6 @@ header {
     color: #d1a02b; 
 }
 
-
 .header-icons {
     flex: 1;
     display: flex;
@@ -87,13 +189,15 @@ header {
     height: auto;
 }
 
-
-.footer {
+/* Estilos para el footer */
+footer {
     background-color: #000; 
     color: #fff;
     padding: 20px 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    text-align: center;
+    width: 100%;
 }
 
 .footer-cont {
@@ -131,5 +235,6 @@ header {
     font-size: 14px;
 }
 
-
-
+.footer-info ul li a:hover {
+    color: #d1a02b;
+}
