@@ -207,50 +207,23 @@ footer {
     }
 }
 
-/* Pantallas medianas (tabletas y pantallas pequeñas en horizontal) */
-@media (max-width: 768px) {
-    /* Logo */
-    .logo { width: 130px; } 
+/* Media Queries para Responsividad */
 
-    /* Header */
-    .header-container {
-        justify-content: center; 
-    }
+/*Media para moviles */
+@media only screen and (max-width:767px) {
 
-    /* Enlaces de categorías */
-    .categorias-list {
-        margin: 0; 
-    }
-
-    /* Formulario de inicio de sesión */
-    .iniciasesion {
-        max-width: 350px; 
-    }
-
-    /* Formulario de registro */
-    .register-form {
-        gap: 18px; 
-    }
 }
 
-/* Pantallas grandes (tabletas en modo horizontal o pantallas de escritorio más pequeñas) */
-@media (max-width: 1024px) {
-    /* Header */
-    .header-container {
-        flex-direction: column; 
-        text-align: center; 
-    }
+/* Media para tablets */
+@media only screen and (min-width:768px) and (max-width:991px) {
 
-    /* Logo */
-    .logo { width: 140px; } /* Ajusta el tamaño del logo */
+}
+/* Para ordenadores */
+@media only screen and (min-width:992px) and (max-width:1199px) {
 
-    /* Enlaces de categorías */
-    .categorias-list {
-        justify-content: center; 
-    }
+}
 
-    /* Formulario de inicio de sesión */
-    .iniciasesion {
-        max-width: 400px; 
-    }
+/* Media para ordenadores sobre mesa */
+@media only screen and (min-width: 1200px) {
+    
 }

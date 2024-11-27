@@ -194,69 +194,21 @@ footer {
 
 /* Media Queries para Responsividad */
 
-/* Pantallas pequeñas (móviles en vertical) */
-@media (max-width: 600px) {
-    .header-container, .footer-cont {
-        flex-direction: column;
-        text-align: center;
-    }
+/*Media para moviles */
+@media only screen and (max-width:767px) {
 
-    .logo {
-        width: 120px;
-    }
-
-    .categorias-list {
-        flex-direction: column;
-        margin: 5px 0;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .product-item {
-        padding: 10px;
-    }
-
-    .footer-info h4 {
-        font-size: 16px;
-    }
-
-    .footer-info ul li a {
-        font-size: 12px;
-    }
 }
 
-/* Pantallas medianas (tabletas y pantallas pequeñas en horizontal) */
-@media (max-width: 768px) {
-    .logo {
-        width: 130px;
-    }
+/* Media para tablets */
+@media only screen and (min-width:768px) and (max-width:991px) {
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+}
+/* Para ordenadores */
+@media only screen and (min-width:992px) and (max-width:1199px) {
 
-    .footer-info h4 {
-        font-size: 16px;
-    }
-
-    .footer-info ul li a {
-        font-size: 13px;
-    }
 }
 
-/* Pantallas grandes (tabletas en modo horizontal o pantallas de escritorio más pequeñas) */
-@media (max-width: 1024px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer-info h4 {
-        font-size: 17px;
-    }
-
-    .footer-info ul li a {
-        font-size: 14px;
-    }
+/* Media para ordenadores sobre mesa */
+@media only screen and (min-width: 1200px) {
+    
 }

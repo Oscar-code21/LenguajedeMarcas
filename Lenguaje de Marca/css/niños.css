@@ -82,7 +82,7 @@ header {
     height: auto;
 }
 /* Estilo para el main */
-main {
+.main {
     padding: 30px 20px;
 }
 
@@ -93,29 +93,27 @@ main {
     color: #333;
 }
 
-
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustar numero de columnas y cada columna tengo como minimo 250px de ancho */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
     gap: 20px;
     justify-items: center;
     margin-top: 20px;
 }
 
-
 .product-item {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombreado centrado alrededor del elemento con desefoque 10 px y opacidad de 10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    aspect-ratio: 1; /* El ancho y el alto sea igual */
+    aspect-ratio: 1; /* Mantiene la relación de aspecto cuadrada */
     height: 100%;
 }
 
 .product-item:hover {
-    transform: translateY(-5px); /* desplazamiento hacia arriba */
+    transform: translateY(-5px);
 }
 
 .product-item img {
@@ -153,6 +151,8 @@ main {
 .product-item button:hover {
     background-color: #0056b3;
 }
+
+
 /* Estilo para el footer */
 footer {
     background-color: #000; 

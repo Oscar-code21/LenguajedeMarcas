@@ -199,45 +199,23 @@ footer {
     color: #d1a02b;
 }
 
-/* Pantallas pequeñas (móviles en vertical) */
-@media (max-width: 600px) {
-    .products-grid, .categories-grid {
-        grid-template-columns: 1fr;
-    }
+/* Media Queries para Responsividad */
 
-    .header-container, .footer-cont {
-        flex-direction: column;
-        text-align: center;
-    }
+/*Media para moviles */
+@media only screen and (max-width:767px) {
 
-    .categorias-list {
-        flex-direction: column;
-    }
-
-    .categorias-list li {
-        margin: 5px 0;
-    }
-
-    .footer-info h4 {
-        font-size: 16px;
-    }
 }
 
-/* Pantallas medianas (tabletas y pantallas pequeñas en horizontal) */
-@media (max-width: 768px) {
-    .products-grid, .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Media para tablets */
+@media only screen and (min-width:768px) and (max-width:991px) {
 
-    .header-container, .footer-cont {
-        flex-direction: column;
-        align-items: center;
-    }
+}
+/* Para ordenadores */
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
 }
 
-/* Pantallas grandes (tabletas en modo horizontal o pantallas de escritorio más pequeñas) */
-@media (max-width: 1024px) {
-    .products-grid, .categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Media para ordenadores sobre mesa */
+@media only screen and (min-width: 1200px) {
+    
 }
