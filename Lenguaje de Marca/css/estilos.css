@@ -1,221 +1,356 @@
+/* Reset global: Elimina márgenes y rellenos predeterminados de todos los elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Margen eliminado */
+    padding: 0; /* margen eliminado de los rellenos internos*/
+    box-sizing: border-box; /* Hace que los bordes y el padding no cambien el tamaño de los elementos */
 }
-/* Reset global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Estilo global para el body */
+
+/* Estilos para el body */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif; /* Define la fuente */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    color: #333; /* Color del texto */
+    display: flex; /* Usa Flexbox para organizar el contenido */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
 }
-/* Aseguramos que el contenido principal ocupe el espacio restante */
+
+/* Estilo para el main, que ocupa el espacio restante */
 main {
-    flex-grow: 1;
-    padding: 20px;
+    flex-grow: 1; /* Hace que main crezca para ocupar el espacio disponible */
+    padding: 1.25rem; /* Espaciado dentro del main */
 }
-/* Estilos para la sección de productos destacados */
+
+/* Estilo para el título de los productos destacados */
 .highlighted-products h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin-bottom: 1.25rem; /* Espacio debajo del título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: bold; /* Pone el texto en negrita */
 }
+
+/* Estilo para los enlaces de productos (sin subrayado y heredando color) */
+.product-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+/* Efecto al pasar el ratón por encima de los productos */
+.product-link:hover {
+    text-decoration: none; /* Elimina el subrayado al pasar el ratón */
+    color: inherit; /* Mantiene el color heredado */
+}
+
+/* Diseño de la grilla de productos */
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: grid; /* Usa grid para organizar los productos */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 1.25rem; /* Espacio entre los elementos */
+    justify-items: center; /* Centra los productos horizontalmente */
+    align-items: center; /* Centra los productos verticalmente */
 }
+
+/* Estilo para cada producto */
 .product-item {
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer; 
+    text-align: center; /* Centra el texto */
+    padding: 0.625rem; /* Espaciado dentro del producto */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
 }
-/* Hacer que la imagen ocupe el 100% del contenedor */
+
+/* Efecto hover: agranda el producto */
+.product-item:hover {
+    transform: scale(1.05); /* Agranda el producto un 5% */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+/* Hace que la imagen ocupe el 100% del contenedor */
 .product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* La imagen ocupa todo el contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
+
 /* Estilo para el título de cada producto */
 .product-item h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
+    margin-top: 0.625rem; /* Espacio arriba */
+    font-size: 1.125rem; /* Tamaño de fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
 }
-/* Estilo para el precio del producto */
+
+/* Estilo para el precio de los productos */
 .product-item p {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 0.3125rem; /* Espacio arriba */
 }
-/* Estilos para la sección de categorías */
+
+/* Estilo para las categorías */
 .categories h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    margin-bottom: 1.25rem; /* Espacio debajo */
+    text-transform: uppercase; /* Mayúsculas */
+    font-weight: bold; /* Negrita */
 }
+
+/* Diseño de la grilla de categorías */
 .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: grid; /* Usa grid para organizar las categorías */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 1.25rem; /* Espacio entre las categorías */
 }
+
+/* Estilo para cada categoría */
 .category-item {
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    text-align: center; /* Centra el texto */
+    padding: 0.625rem; /* Espaciado dentro de cada categoría */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición al hacer hover */
 }
-/* Hacer que la imagen ocupe el 100% de su contenedor */
+
+/* Hace que la imagen de cada categoría ocupe el 100% de su contenedor */
 .category-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
+
 /* Estilo para el título de cada categoría */
 .category-item h3 {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
     text-transform: uppercase;
 }
-/* Estilo para los enlaces de categorías */
+
+/* Elimina el subrayado y mantiene el color heredado de los enlaces en las categorías */
 .categories a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none;
+    color: inherit;
 }
-/* Efecto al pasar el ratón sobre la categoría */
+
+/* Efecto hover en categorías: agranda el contenedor */
 .categories .category-item:hover {
-    transform: scale(1.05); /* Agranda ligeramente el contenedor */
-    cursor: pointer; /* Cambia el cursor a mano */
+    transform: scale(1.05); /* Agranda el contenedor de la categoría */
+    cursor: pointer; /* Cambia el cursor a una mano */
 }
+
 /* Estilos para el header */
 header {
-    background-color: #000; 
-    padding: 15px 0;
+    background-color: #000; /* Fondo negro */
+    padding: 0.9375rem 0; /* Espaciado vertical */
 }
+
+/* Contenedor del header: se organiza con Flexbox */
 .header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: space-between; /* Espacio entre logo, categorías y iconos */
+    align-items: center; /* Centra los elementos verticalmente */
+    max-width: 75rem; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+    padding: 0 1.25rem; /* Espaciado a los lados */
 }
+
+/* Estilos para el logo */
 .logo-container {
     flex: 1;
 }
-.logo-link {
-    display: inline-block;
-}
+
 .logo {
-    width: 150px;
-    height: auto;
+    width: 9.375rem; /* Ancho del logo */
+    height: auto; /* Mantiene la relación de aspecto */
 }
+
+/* Estilos para los enlaces de las categorías */
 .categorias-links {
     flex: 2;
-    text-align: center;
+    text-align: center; /* Centra los enlaces */
 }
+
+/* Lista de categorías */
 .categorias-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Elimina los puntos de lista */
+    display: flex; /* Usa Flexbox para organizar los enlaces */
+    justify-content: center; /* Centra los enlaces */
 }
+
 .categorias-list li {
-    margin: 0 20px;
+    margin: 0 1.25rem; /* Espacio entre los elementos de la lista */
 }
+
 .categorias-list a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: normal;
-    font-size: 14px;
-    text-transform: uppercase;
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff; /* Color blanco */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Mayúsculas */
 }
+
 .categorias-list a:hover {
-    color: #d1a02b; 
+    color: #d1a02b; /* Cambia el color cuando se pasa el ratón */
 }
+
+/* Estilos para los iconos en el header */
 .header-icons {
     flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    display: flex; /* Usa Flexbox para los iconos */
+    justify-content: flex-end; /* Los coloca a la derecha */
 }
+
 .icon-link {
-    margin-left: 20px;
-    display: inline-block;
+    margin-left: 1.25rem; /* Espacio entre los iconos */
 }
+
 .header-icon {
-    width: 24px;
-    height: auto;
+    width: 1.5rem; /* Ancho de los iconos */
+    height: auto; /* Mantiene la relación de aspecto */
 }
+
 /* Estilos para el footer */
 footer {
-    background-color: #000; 
-    color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    width: 100%;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color blanco */
+    padding: 1.25rem 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto */
 }
+
+/* Contenedor del footer */
 .footer-cont {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
+    max-width: 75rem; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+    padding: 0 1.25rem; /* Espaciado a los lados */
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centra los elementos */
 }
+
+/* Estilos para la información del footer */
 .footer-info {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+    margin-top: 1.25rem;
 }
+
 .footer-info h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1.125rem; /* Tamaño de la fuente */
+    margin-bottom: 0.9375rem; /* Espacio debajo del título */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
 }
+
 .footer-info ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el padding */
 }
+
 .footer-info ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* Espacio entre los elementos de la lista */
 }
+
 .footer-info ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff; /* Color blanco */
 }
+
 .footer-info ul li a:hover {
-    color: #d1a02b;
+    color: #d1a02b; /* Cambia el color cuando se pasa el ratón */
 }
 
 /* Media Queries para Responsividad */
-
-/*Media para moviles */
-@media only screen and (max-width:767px) {
-
+/* Media para móviles (menos de 767px) */
+@media only screen and (max-width: 47.9375rem) {
+    body {
+        padding: 0.9325rem; /* Añadir espaciado lateral para pantallas pequeñas */
+    }
+    header {
+        padding: 0.625rem 0; /* Reducir el padding del header */
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo-container {
+        flex: none;
+        margin-bottom: 0625rem;
+    }
+    .categorias-links {
+        flex: none;
+        width: 100%;
+        text-align: left;
+        margin-top: 0.625rem;
+    }
+    .categorias-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .categorias-list li {
+        margin: 0.3125rem 0;
+    }
+    .header-icons {
+        justify-content: flex-start;
+        margin-top: 0.625rem;
+    }
+    .products-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+    .categories-grid {
+        grid-template-columns: 1fr; /* Una columna para categorías */
+    }
+    .product-item, .category-item {
+        width: 100%; /* Los elementos ocupan todo el ancho disponible */
+    }
+    footer {
+        padding: 0.9375rem 0;
+    }
+}
+/* Media para tablets (de 768px a 991px) */
+@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .categorias-list {
+        flex-direction: row;
+    }
+    .categorias-list li {
+        margin: 0 0.625rem;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+    .product-item, .category-item {
+        width: 100%; /* Asegura que los productos y categorías ocupen todo el espacio disponible */
+    }
+}
+/* Media para ordenadores pequeños (de 992px a 1199px) */
+@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
+    .header-container {
+        padding: 0 2.5rem;
+    }
+    .categorias-list {
+        flex-direction: row;
+    }
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en ordenadores pequeños */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en ordenadores pequeños */
+    }
+}
+/* Media para ordenadores de escritorio grandes (más de 1200px) */
+@media only screen and (min-width: 75rem) {
+    .header-container {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en categorías */
+    }
+    .footer-cont {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
 }
 
-/* Media para tablets */
-@media only screen and (min-width:768px) and (max-width:991px) {
-
-}
-/* Para ordenadores */
-@media only screen and (min-width:992px) and (max-width:1199px) {
-
-}
-
-/* Media para ordenadores sobre mesa */
-@media only screen and (min-width: 1200px) {
-    
-}

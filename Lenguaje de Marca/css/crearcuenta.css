@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: #000; 
-    padding: 15px 0;
+    padding: 0.9375rem 0; /* 15px */
     width: 100%;
 }
 
@@ -25,9 +25,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px */
 }
 
 .logo-container {
@@ -39,7 +39,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 9.375rem; /* 150px */
     height: auto;
 }
 
@@ -55,14 +55,14 @@ header {
 }
 
 .categorias-list li {
-    margin: 0 20px;
+    margin: 0 1.25rem; /* 20px */
 }
 
 .categorias-list a {
     text-decoration: none;
     color: #fff;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     text-transform: uppercase;
 }
 
@@ -73,37 +73,37 @@ header {
 }
 
 .icon-link {
-    margin-left: 20px;
+    margin-left: 1.25rem; /* 20px */
     display: inline-block;
 }
 
 .header-icon {
-    width: 24px;
+    width: 1.5rem; /* 24px */
     height: auto;
 }
 
 .iniciasesion {
     background-color: white;
-    padding: 40px 30px;
-    border-radius: 8px;
+    padding: 2.5rem 1.875rem; /* 40px 30px */
+    border-radius: 0.5rem; /* 8px */
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem; /* 400px */
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.125rem; /* 50px */
     flex-grow: 1; 
 }
 
 header h1 {
     text-align: center;
     color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .register-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 }
 
 .form-group {
@@ -112,49 +112,48 @@ header h1 {
 }
 
 label {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px */
 }
 
 input {
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 14px;
-    border: 1px solid #555;
-    border-radius: 4px;
+    padding: 0.625rem; /* 10px */
+    margin-top: 0.3125rem; /* 5px */
+    font-size: 0.875rem; /* 14px */
+    border: 0.0625rem solid #555; /* 1px */
+    border-radius: 0.25rem; /* 4px */
 }
 
 button {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 0.5rem 1rem; /* 8px 16px */
+    font-size: 0.875rem; /* 14px */
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem; /* 4px */
     background-color: #fff;
     color: black;
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px */
 }
-
 
 footer {
     background-color: #000; 
     color: #fff;
-    padding: 20px 0;
+    padding: 1.25rem 0; /* 20px */
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     text-align: center;
     width: 100%;
 }
 
 .footer-cont {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px */
 }
 
 .footer-info h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.125rem; /* 18px */
+    margin-bottom: 0.9375rem; /* 15px */
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -165,65 +164,127 @@ footer {
 }
 
 .footer-info ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
 }
 
 .footer-info ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
 }
 
 
-/* Pantallas pequeñas (móviles en vertical) */
-@media (max-width: 600px) {
-    
-    .header-container, .footer-cont, .footer-info h4, .footer-info ul li a {
-        flex-direction: column; 
-        text-align: center;
-        font-size: 12px; 
-    }
 
-    .logo { width: 120px; } /* Redimensiona el logo */
-    
-    /* Categorías y enlaces */
-    .categorias-list { 
-        flex-direction: column; 
-        margin: 10px 0; 
-    }
 
-    /* Formulario de inicio de sesión */
-    .iniciasesion {
-        padding: 30px 20px; 
-    }
-
-    /* Formulario de registro */
-    .register-form {
-        gap: 15px; 
-    }
-
-    input, button {
-        font-size: 12px; 
-    }
-}
 
 /* Media Queries para Responsividad */
 
-/*Media para moviles */
-@media only screen and (max-width:767px) {
-
+/* Media para móviles (menos de 767px) */
+@media only screen and (max-width: 47.9375rem) { /* 767px */
+    body {
+        padding: 0.9375rem; /* 15px */
+    }
+    header {
+        padding: 0.625rem 0; /* 10px */
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo-container {
+        flex: none;
+        margin-bottom: 0.625rem; /* 10px */
+    }
+    .categorias-links {
+        flex: none;
+        width: 100%;
+        text-align: left;
+        margin-top: 0.625rem; /* 10px */
+    }
+    .categorias-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .categorias-list li {
+        margin: 0.3125rem 0; /* 5px */
+    }
+    .header-icons {
+        justify-content: flex-start;
+        margin-top: 0.625rem; /* 10px */
+    }
+    .iniciasesion {
+        padding: 1.875rem 1.25rem; /* 30px 20px */
+        margin-top: 1.875rem; /* 30px */
+    }
+    /* Ajustar formulario de inicio de sesión */
+    .register-form {
+        gap: 0.9375rem; /* 15px */
+    }
+    input, button {
+        font-size: 0.75rem; /* 12px */
+    }
+    footer {
+        padding: 0.9375rem 0; /* 15px */
+    }
 }
 
-/* Media para tablets */
-@media only screen and (min-width:768px) and (max-width:991px) {
-
+/* Media para tablets (de 768px a 991px) */
+@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) { /* 768px a 991px */
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 8.75rem; /* 140px */
+    }
+    .categorias-list {
+        flex-direction: row;
+    }
+    .categorias-list li {
+        margin: 0 0.9375rem; /* 15px */
+    }
+    .iniciasesion {
+        max-width: 21.875rem; /* 350px */
+    }
+    /* Ajustar productos y categorías */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-/* Para ordenadores */
-@media only screen and (min-width:992px) and (max-width:1199px) {
 
+/* Media para ordenadores pequeños (de 992px a 1199px) */
+@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) { /* 992px a 1199px */
+    .header-container {
+        padding: 0 2.5rem; /* 40px */
+    }
+    .categorias-list {
+        flex-direction: row;
+    }
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en ordenadores pequeños */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-/* Media para ordenadores sobre mesa */
-@media only screen and (min-width: 1200px) {
-    
+/* Media para ordenadores de escritorio grandes (más de 1200px) */
+@media only screen and (min-width: 75rem) { /* 1200px */
+    .header-container {
+        max-width: 75rem; /* 1200px */
+        margin: 0 auto;
+    }
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    }
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-cont {
+        max-width: 75rem; /* 1200px */
+        margin: 0 auto;
+    }
 }

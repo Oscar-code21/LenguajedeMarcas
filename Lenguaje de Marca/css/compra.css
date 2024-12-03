@@ -1,0 +1,254 @@
+/* Reset General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo General del Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 1.25rem; /* 20px */
+}
+
+/* Estilo del Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; /* 20px */
+    justify-content: center;
+    max-width: 75rem; /* 1200px */
+    background-color: #fff;
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+}
+
+/* Estilo para la Sección de Imagen */
+.product-section {
+    max-width: 31.25rem; /* 500px */
+    flex: 1 1 40%;
+    padding: 0.625rem; /* 10px */
+    background-color: #fafafa;
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.5rem; /* 8px */
+}
+
+.product-section img {
+    width: 100%;
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* Estilo para la Lista de Miniaturas */
+.thumbnail-list {
+    display: flex;
+    gap: 0.625rem; /* 10px */
+    margin-top: 0.625rem; /* 10px */
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.thumbnail-list img {
+    width: 5rem; /* 80px */
+    height: auto;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    border: 0.0625rem solid #ddd; /* 1px */
+}
+
+/* Estilo para la Sección de Detalles */
+.details-section {
+    max-width: 31.25rem; /* 500px */
+    flex: 1 1 40%;
+    padding: 0.625rem; /* 10px */
+    background-color: #fafafa;
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* Título del Producto */
+.details-section h1 {
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+/* Precio del Producto */
+.details-section .price {
+    font-size: 1.25rem; /* 20px */
+    color: #888;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Formulario */
+.details-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* 10px */
+}
+
+.details-section form select {
+    padding: 0.625rem; /* 10px */
+    font-size: 1rem; /* 16px */
+    border-radius: 0.3125rem; /* 5px */
+    border: 0.0625rem solid #ddd; /* 1px */
+}
+
+.details-section form button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.625rem; /* 10px */
+    font-size: 1rem; /* 16px */
+    border-radius: 0.3125rem; /* 5px */
+    border: none;
+    cursor: pointer;
+}
+
+.details-section form button:hover {
+    background-color: #333;
+}
+
+/* Media Queries para Responsividad */
+
+/* Media para móviles (menos de 767px) */
+@media only screen and (max-width: 47.9375rem) { /* 767px */
+    body {
+        padding: 0.625rem; /* 10px */
+    }
+
+    main {
+        flex-direction: column;
+        padding: 0.625rem; /* 10px */
+    }
+
+    .product-section, .details-section {
+        max-width: 100%;
+        flex: 1 1 100%;
+        padding: 0.625rem; /* 10px */
+    }
+
+    .thumbnail-list {
+        flex-direction: column;
+        gap: 0.3125rem; /* 5px */
+    }
+
+    .thumbnail-list img {
+        width: 3.75rem; /* 60px */
+    }
+
+    .details-section h1 {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .details-section .price {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .details-section form select, .details-section form button {
+        font-size: 0.875rem; /* 14px */
+        padding: 0.5rem; /* 8px */
+    }
+}
+
+/* Media para tablets (768px - 991px) */
+@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) { /* 768px - 991px */
+    main {
+        flex-direction: row;
+        gap: 1.25rem; /* 20px */
+    }
+
+    .product-section, .details-section {
+        max-width: 45%;
+        flex: 1 1 45%;
+    }
+
+    .thumbnail-list {
+        gap: 0.5rem; /* 8px */
+    }
+
+    .thumbnail-list img {
+        width: 4.375rem; /* 70px */
+    }
+
+    .details-section h1 {
+        font-size: 1.375rem; /* 22px */
+    }
+
+    .details-section .price {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .details-section form select, .details-section form button {
+        font-size: 0.9375rem; /* 15px */
+        padding: 0.5625rem; /* 9px */
+    }
+}
+
+/* Media para ordenadores pequeños (992px - 1199px) */
+@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) { /* 992px - 1199px */
+    main {
+        padding: 1.25rem; /* 20px */
+    }
+
+    .product-section, .details-section {
+        max-width: 48%;
+        flex: 1 1 48%;
+    }
+
+    .thumbnail-list img {
+        width: 5rem; /* 80px */
+    }
+
+    .details-section h1 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .details-section .price {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .details-section form select, .details-section form button {
+        font-size: 1rem; /* 16px */
+        padding: 0.625rem; /* 10px */
+    }
+}
+
+/* Media para ordenadores de escritorio grandes (1200px+) */
+@media only screen and (min-width: 75rem) { /* 1200px */
+    main {
+        max-width: 75rem; /* 1200px */
+        padding: 1.25rem; /* 20px */
+    }
+
+    .product-section, .details-section {
+        max-width: 31.25rem; /* 500px */
+        flex: 1 1 45%;
+    }
+
+    .thumbnail-list {
+        gap: 0.625rem; /* 10px */
+    }
+
+    .thumbnail-list img {
+        width: 5rem; /* 80px */
+    }
+
+    .details-section h1 {
+        font-size: 1.625rem; /* 26px */
+    }
+
+    .details-section .price {
+        font-size: 1.375rem; /* 22px */
+    }
+
+    .details-section form select, .details-section form button {
+        font-size: 1rem; /* 16px */
+        padding: 0.75rem; /* 12px */
+    }
+}

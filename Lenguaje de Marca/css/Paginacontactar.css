@@ -13,8 +13,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
+    width: 100%;
 }
-
 /* Estilo para el header */
 header {
     background-color: #000; 
@@ -85,72 +85,46 @@ header {
 
 /* Estilo para el main */
 main {
-    padding: 1.875rem 1.25rem;
-}
-
-.products h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
-    color: #333;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */    
-    gap: 1.25rem;
-    justify-items: center;
-    margin-top: 1.25rem;
-}
-
-.product-item {
+    padding: 5rem;
+    max-width: 56.25rem;
+    margin: 2rem auto;
     background-color: white;
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Sombreado centrado alrededor del elemento con desefoque 0.625rem y opacidad de 10% */
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    min-height: 31.25rem;
+}
+
+h2 {
     text-align: center;
-    transition: transform 0.3s ease;
-    aspect-ratio: 1; /* El ancho y el alto sea igual */
-    height: 100%;
-}
-
-.product-item:hover {
-    transform: translateY(-0.3125rem); /* desplazamiento hacia arriba */
-}
-
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    max-width: 12.5rem;
-    margin-bottom: 0.625rem;
-}
-
-.product-item h3 {
-    font-size: 1.125rem;
-    margin-top: 0.625rem;
     color: #333;
+    margin-bottom: 1.5rem;
 }
 
-.product-item p {
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
     font-size: 1rem;
-    color: #666;
-    margin-top: 0.3125rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-.product-item button {
-    background-color: #007BFF;
+button {
+    background-color: #007bff;
     color: white;
-    border: none;
-    padding: 0.625rem 1.25rem;
-    font-size: 1rem;
-    border-radius: 0.3125rem;
     cursor: pointer;
-    margin-top: 0.625rem;
-    transition: background-color 0.3s;
+    border: none;
 }
 
-.product-item button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
@@ -193,16 +167,16 @@ footer {
     font-size: 0.875rem;
 }
 
-
 /* Media Queries para Responsividad */
+
 /* Media para móviles */
 @media only screen and (max-width: 47.6875rem) {
     .header-container {
         flex-direction: column; /* Organiza los elementos del header en columna */
-        text-align: center; /* Centra los elementos del header */
+        text-align: center;
     }
     .logo {
-        width: 7.5rem; /* Reduce el tamaño del logo para móviles */
+        width: 7.5rem; /* Ajusta el tamaño del logo para móviles */
     }
     .categorias-list {
         flex-direction: column; /* Lista de categorías en columna */
@@ -211,18 +185,10 @@ footer {
     .header-icons {
         justify-content: center; /* Centra los íconos */
     }
-    .product-grid {
-        grid-template-columns: 1fr; /* Solo una columna para los productos */
-    }
-    .product-item {
-        width: 56.25%; /* Ajusta el tamaño de los productos */
-        margin: 0 auto; /* Centra los productos */
-    }
-    .products h2 {
-        font-size: 1.375rem; /* Reduce el tamaño del título */
-    }
-    footer {
-        padding: 0.625rem 0; /* Reduce el padding en el footer */
+    main {
+        padding: 2rem; /* Reduce el padding para pantallas pequeñas */
+        width: 100%; /* Ocupa todo el ancho */
+        min-height: 25rem; /* Ajusta la altura mínima */
     }
 }
 
@@ -234,33 +200,23 @@ footer {
     .categorias-list {
         font-size: 1rem; /* Ajusta el tamaño de las categorías */
     }
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas para productos */
-    }
-    .product-item {
-        width: 59.375%; /* Ajusta el tamaño de los productos */
-    }
-    .products h2 {
-        font-size: 1.625rem; /* Ajusta el tamaño del título */
+    main {
+        padding: 3rem; /* Aumenta el padding para pantallas más grandes */
+        width: 90%; /* Ajusta el ancho para ocupar más espacio */
     }
 }
 
 /* Media para ordenadores pequeños */
 @media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
     .header-container {
-        padding: 0 1.875rem; /* Mayor espacio en los laterales */
+        padding: 0 1.875rem; /* Espaciado más amplio en pantallas más grandes */
     }
     .categorias-list {
         font-size: 1.125rem; /* Ajusta el tamaño de las categorías */
     }
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas para productos */
-    }
-    .product-item {
-        width: 100%; /* Ocupa el 100% del espacio disponible */
-    }
-    .products h2 {
-        font-size: 1.75rem; /* Ajusta el tamaño del título */
+    main {
+        padding: 4rem; /* Ajusta el padding */
+        width: 85%; /* Reduce un poco el ancho */
     }
 }
 
@@ -272,13 +228,8 @@ footer {
     .categorias-list {
         font-size: 1.25rem; /* Aumenta el tamaño de las categorías */
     }
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas para productos */
-    }
-    .product-item {
-        width: 100%; /* Los productos ocupan todo el ancho */
-    }
-    .products h2 {
-        font-size: 2rem; /* Ajusta el tamaño del título */
+    main {
+        padding: 5rem; /* Espaciado amplio para pantallas grandes */
+        width: 75%; /* Ancho reducido para mantener proporciones adecuadas */
     }
 }

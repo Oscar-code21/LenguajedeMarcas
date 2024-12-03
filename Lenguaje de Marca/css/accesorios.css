@@ -15,9 +15,8 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo para el header */
 header {
-    background-color: #000; 
+    background-color: #000;
     padding: 0.9375rem 0;
     width: 100%;
 }
@@ -83,7 +82,6 @@ header {
     height: auto;
 }
 
-/* Estilo para el main */
 main {
     padding: 1.875rem 1.25rem;
 }
@@ -97,7 +95,7 @@ main {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */    
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
     justify-items: center;
     margin-top: 1.25rem;
@@ -107,15 +105,15 @@ main {
     background-color: white;
     padding: 1.25rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Sombreado centrado alrededor del elemento con desefoque 0.625rem y opacidad de 10% */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    aspect-ratio: 1; /* El ancho y el alto sea igual */
+    aspect-ratio: 1;
     height: 100%;
 }
 
 .product-item:hover {
-    transform: translateY(-0.3125rem); /* desplazamiento hacia arriba */
+    transform: translateY(-0.3125rem);
 }
 
 .product-item img {
@@ -154,9 +152,8 @@ main {
     background-color: #0056b3;
 }
 
-/* Estilo para el footer */
 footer {
-    background-color: #000; 
+    background-color: #000;
     color: #fff;
     padding: 1.25rem 0;
     font-family: Arial, sans-serif;
@@ -193,92 +190,86 @@ footer {
     font-size: 0.875rem;
 }
 
-
-/* Media Queries para Responsividad */
-/* Media para móviles */
-@media only screen and (max-width: 47.6875rem) {
+@media only screen and (max-width: 767px) {
     .header-container {
-        flex-direction: column; /* Organiza los elementos del header en columna */
-        text-align: center; /* Centra los elementos del header */
+        flex-direction: column;
+        text-align: center;
     }
     .logo {
-        width: 7.5rem; /* Reduce el tamaño del logo para móviles */
+        width: 7.5rem;
     }
     .categorias-list {
-        flex-direction: column; /* Lista de categorías en columna */
+        flex-direction: column;
         margin-top: 0.625rem;
     }
     .header-icons {
-        justify-content: center; /* Centra los íconos */
+        justify-content: center;
     }
     .product-grid {
-        grid-template-columns: 1fr; /* Solo una columna para los productos */
+        grid-template-columns: 1fr;
     }
     .product-item {
-        width: 56.25%; /* Ajusta el tamaño de los productos */
-        margin: 0 auto; /* Centra los productos */
+        width: 90%;
+        margin: 0 auto;
     }
     .products h2 {
-        font-size: 1.375rem; /* Reduce el tamaño del título */
+        font-size: 1.375rem;
     }
     footer {
-        padding: 0.625rem 0; /* Reduce el padding en el footer */
+        padding: 0.625rem 0;
     }
 }
 
-/* Media para tablets */
-@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-container {
-        padding: 0 0.9375rem; /* Reduce el espacio en los laterales */
+        padding: 0 0.9375rem;
     }
     .categorias-list {
-        font-size: 1rem; /* Ajusta el tamaño de las categorías */
+        font-size: 1rem;
     }
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas para productos */
+        grid-template-columns: repeat(2, 1fr);
     }
     .product-item {
-        width: 59.375%; /* Ajusta el tamaño de los productos */
+        width: 95%;
     }
     .products h2 {
-        font-size: 1.625rem; /* Ajusta el tamaño del título */
+        font-size: 1.625rem;
     }
 }
 
-/* Media para ordenadores pequeños */
-@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-container {
-        padding: 0 1.875rem; /* Mayor espacio en los laterales */
+        padding: 0 1.875rem;
     }
     .categorias-list {
-        font-size: 1.125rem; /* Ajusta el tamaño de las categorías */
+        font-size: 1.125rem;
     }
     .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas para productos */
+        grid-template-columns: repeat(3, 1fr);
     }
     .product-item {
-        width: 100%; /* Ocupa el 100% del espacio disponible */
+        width: 100%;
     }
     .products h2 {
-        font-size: 1.75rem; /* Ajusta el tamaño del título */
+        font-size: 1.75rem;
     }
 }
 
-/* Media para ordenadores de escritorio grandes */
-@media only screen and (min-width: 75rem) {
+@media only screen and (min-width: 1200px) {
     .header-container {
-        max-width: 75rem; /* Limita el ancho máximo del header */
+        max-width: 75rem;
     }
     .categorias-list {
-        font-size: 1.25rem; /* Aumenta el tamaño de las categorías */
+        font-size: 1.25rem;
     }
     .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas para productos */
+        grid-template-columns: repeat(3, 1fr);
     }
     .product-item {
-        width: 100%; /* Los productos ocupan todo el ancho */
+        width: 100%;
     }
     .products h2 {
-        font-size: 2rem; /* Ajusta el tamaño del título */
+        font-size: 2rem;
     }
 }

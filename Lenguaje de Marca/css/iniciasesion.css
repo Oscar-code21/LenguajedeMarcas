@@ -38,22 +38,56 @@ a:hover {
 
 
 /* Media Queries para Responsividad */
-
-/*Media para moviles */
-@media only screen and (max-width:767px) {
-
+/* Media para móviles */
+@media only screen and (max-width: 47.6875rem) {
+    body {
+        flex-direction: column; /* Organiza los elementos en columna para móviles */
+        padding: 1.25rem; /* Añade un poco de padding en los laterales */
+    }
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+    p {
+        font-size: 0.875rem; /* Ajusta el tamaño del texto */
+        margin-top: 0.625rem; /* Añade un poco de espacio entre el título y el párrafo */
+    }
 }
 
 /* Media para tablets */
-@media only screen and (min-width:768px) and (max-width:991px) {
-
+@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) {
+    body {
+        padding: 1.875rem; /* Aumenta el padding en pantallas más grandes */
+    }
+    h1 {
+        font-size: 1.75rem; /* Ajusta el tamaño del título para tablets */
+    }
+    p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
 }
-/* Para ordenadores */
-@media only screen and (min-width:992px) and (max-width:1199px) {
 
+/* Media para ordenadores pequeños */
+@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
+    body {
+        padding: 2.5rem; /* Ajusta el padding para pantallas medianas */
+    }
+    h1 {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+    p {
+        font-size: 1.125rem; /* Aumenta el tamaño del párrafo */
+    }
 }
 
-/* Media para ordenadores sobre mesa */
-@media only screen and (min-width: 1200px) {
-    
+/* Media para ordenadores de escritorio grandes */
+@media only screen and (min-width: 75rem) {
+    body {
+        padding: 3.125rem; /* Añade más espacio para pantallas grandes */
+    }
+    h1 {
+        font-size: 2.25rem; /* Aumenta aún más el tamaño del título */
+    }
+    p {
+        font-size: 1.25rem; /* Aumenta el tamaño del párrafo */
+    }
 }
