@@ -110,22 +110,22 @@ main {
 
 /* Hace que la imagen de cada categoría ocupe el 100% de su contenedor */
 .category-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
+    width: 100%; /* ocupa el 100% del ancho */
+    height: auto; /* mantiene las proporciones originales de la imagen */
+    border-radius: 0.5rem; /* redondea las esquinas de la imagen  con un radio de 0.5 rem */
 }
 
 /* Estilo para el título de cada categoría */
 .category-item h3 {
-    margin-top: 0.625rem;
-    font-size: 1.125rem;
-    text-transform: uppercase;
+    margin-top: 0.625rem; /* agrega espacio superior */
+    font-size: 1.125rem; /* el tamaño de la fuente en 1.125 rem */
+    text-transform: uppercase; /* convierte el texto del titulo en mayuscula */
 }
 
 /* Elimina el subrayado y mantiene el color heredado de los enlaces en las categorías */
 .categories a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* elimina la decoración de los enlaces */
+    color: inherit; /* herededa el color del texto del contenedor padre */
 }
 
 /* Efecto hover en categorías: agranda el contenedor */
@@ -142,7 +142,7 @@ header {
 
 /* Contenedor del header: se organiza con Flexbox */
 .header-container {
-    display: flex;
+    display: flex; /* organizada en fila horizontales */
     justify-content: space-between; /* Espacio entre logo, categorías y iconos */
     align-items: center; /* Centra los elementos verticalmente */
     max-width: 75rem; /* Ancho máximo */
@@ -152,7 +152,7 @@ header {
 
 /* Estilos para el logo */
 .logo-container {
-    flex: 1;
+    flex: 1; /* ocupa el espacio disponible */
 }
 
 .logo {
@@ -162,7 +162,7 @@ header {
 
 /* Estilos para los enlaces de las categorías */
 .categorias-links {
-    flex: 2;
+    flex: 2; /* ocupa dos veces mas el espacio disponible */
     text-align: center; /* Centra los enlaces */
 }
 
@@ -190,7 +190,7 @@ header {
 
 /* Estilos para los iconos en el header */
 .header-icons {
-    flex: 1;
+    flex: 1; /* ocupa el espacio disponible */
     display: flex; /* Usa Flexbox para los iconos */
     justify-content: flex-end; /* Los coloca a la derecha */
 }
@@ -224,7 +224,7 @@ footer {
 /* Estilos para la información del footer */
 .footer-info {
     text-align: center; /* Centra el texto */
-    margin-top: 1.25rem;
+    margin-top: 1.25rem; /* establece el espacio superior de 1.25 rem */
 }
 
 .footer-info h4 {
@@ -262,29 +262,29 @@ footer {
         padding: 0.625rem 0; /* Reducir el padding del header */
     }
     .header-container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Pasa a columna */
+        align-items: flex-start; /* Alinea los elementos hijos a la izquierda */
     }
     .logo-container {
-        flex: none;
-        margin-bottom: 0625rem;
+        flex: none; /* Elimina la flexibilidad del contenedor */
+        margin-bottom: 0625rem; /* Agregamos margen inferior */
     }
     .categorias-links {
-        flex: none;
-        width: 100%;
-        text-align: left;
-        margin-top: 0.625rem;
+        flex: none; /* Elimina la flexibilidad */
+        width: 100%; /* Establece el ancho 100% del contendor padre */
+        text-align: left; /* lo alinea el texto a la izquierda */
+        margin-top: 0.625rem; /* Agregan un margen superior */
     }
     .categorias-list {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Se apilan en columnas */
+        align-items: flex-start; /* los alinea a la izquierda */
     }
     .categorias-list li {
-        margin: 0.3125rem 0;
+        margin: 0.3125rem 0; /* establece un margen vertical */
     }
     .header-icons {
-        justify-content: flex-start;
-        margin-top: 0.625rem;
+        justify-content: flex-start; /* alinea los iconos a lado izquierdo */
+        margin-top: 0.625rem; /* agrega un margen superior */
     }
     .products-grid {
         grid-template-columns: 1fr; /* Una columna en móviles */
@@ -302,14 +302,14 @@ footer {
 /* Media para tablets (de 768px a 991px) */
 @media only screen and (min-width: 48rem) and (max-width: 61.9375rem) {
     .header-container {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: row; /*  Lo cambia a una fila */
+        justify-content: space-between; /*  deja espacio entre ellos */
     }
     .categorias-list {
-        flex-direction: row;
+        flex-direction: row; /* lo cambia a una fila */
     }
     .categorias-list li {
-        margin: 0 0.625rem;
+        margin: 0 0.625rem; /* agrega margen horizontal (izquierdo y derecho) */
     }
     .products-grid {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
@@ -324,10 +324,10 @@ footer {
 /* Media para ordenadores pequeños (de 992px a 1199px) */
 @media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
     .header-container {
-        padding: 0 2.5rem;
+        padding: 0 2.5rem; /* agrega padding a en los lados izquierdo y derecho */
     }
     .categorias-list {
-        flex-direction: row;
+        flex-direction: row; /* lo cambia a una fila */
     }
     .products-grid {
         grid-template-columns: repeat(3, 1fr); /* Tres columnas en ordenadores pequeños */
@@ -339,8 +339,8 @@ footer {
 /* Media para ordenadores de escritorio grandes (más de 1200px) */
 @media only screen and (min-width: 75rem) {
     .header-container {
-        max-width: 75rem;
-        margin: 0 auto;
+        max-width: 75rem; /* establece un ancho maximo de 75rem */
+        margin: 0 auto; /* centra el contenedor horizontalmente */
     }
     .products-grid {
         grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
@@ -349,8 +349,8 @@ footer {
         grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en categorías */
     }
     .footer-cont {
-        max-width: 75rem;
-        margin: 0 auto;
+        max-width: 75rem; /*ancho maximo de 75 rem */
+        margin: 0 auto; /* centra el contendor horizontalmente */
     }
 }
 

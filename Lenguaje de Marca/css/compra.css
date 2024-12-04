@@ -1,117 +1,114 @@
 /* Reset General */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde estén dentro del tamaño total del elemento */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
 }
-
 /* Estilo General del Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-    padding: 1.25rem; /* 20px */
+    font-family: Arial, sans-serif; /* Define la fuente de texto */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Hace que el body ocupe toda la altura de la ventana */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    padding: 1.25rem; /* Espaciado alrededor del contenido */
 }
 
-/* Estilo del Main */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem; /* 20px */
-    justify-content: center;
-    max-width: 75rem; /* 1200px */
-    background-color: #fff;
-    padding: 1.25rem; /* 20px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando sea necesario */
+    gap: 1.25rem; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos dentro del main */
+    max-width: 75rem; /* Ancho máximo para el main */
+    background-color: #fff; /* Fondo blanco */
+    padding: 1.25rem; /* Espaciado dentro del main */
+    border-radius: 0.625rem; /* Bordes redondeados */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del main */
 }
-
 /* Estilo para la Sección de Imagen */
 .product-section {
-    max-width: 31.25rem; /* 500px */
-    flex: 1 1 40%;
-    padding: 0.625rem; /* 10px */
-    background-color: #fafafa;
-    border: 0.0625rem solid #ddd; /* 1px */
-    border-radius: 0.5rem; /* 8px */
+    max-width: 31.25rem; /* Ancho máximo de la sección de imagen */
+    flex: 1 1 40%; /* Ocupa el 40% del contenedor */
+    padding: 0.625rem; /* Espaciado dentro de la sección */
+    background-color: #fafafa; /* Fondo gris muy claro */
+    border: 0.0625rem solid #ddd; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
 
 .product-section img {
     width: 100%;
-    border-radius: 0.5rem; /* 8px */
+    border-radius: 0.5rem; 
 }
 
-/* Estilo para la Lista de Miniaturas */
+/* Estilo para las Miniaturas */
 .thumbnail-list {
-    display: flex;
-    gap: 0.625rem; /* 10px */
-    margin-top: 0.625rem; /* 10px */
-    list-style: none;
-    padding: 0;
-    justify-content: center;
+    display: flex; /* Organiza las miniaturas en fila */
+    gap: 0.625rem; /* Espacio entre las miniaturas */
+    margin-top: 0.625rem; /* Espacio sobre las miniaturas */
+    list-style: none; /* Elimina los puntos de la lista */
+    justify-content: center; /* Centra las miniaturas */
 }
 
 .thumbnail-list img {
-    width: 5rem; /* 80px */
-    height: auto;
-    border-radius: 0.3125rem; /* 5px */
-    cursor: pointer;
-    border: 0.0625rem solid #ddd; /* 1px */
+    width: 5rem; /* Tamaño fijo para las miniaturas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 0.3125rem; /* Bordes redondeados para las miniaturas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las miniaturas */
+    border: 0.0625rem solid #ddd; /* Borde gris claro para las miniaturas */
 }
+
 
 /* Estilo para la Sección de Detalles */
 .details-section {
-    max-width: 31.25rem; /* 500px */
-    flex: 1 1 40%;
-    padding: 0.625rem; /* 10px */
-    background-color: #fafafa;
-    border: 0.0625rem solid #ddd; /* 1px */
-    border-radius: 0.5rem; /* 8px */
+    max-width: 31.25rem; /* Ancho máximo para la sección de detalles */
+    flex: 1 1 40%; /* Ocupa el 40% del ancho */
+    padding: 0.625rem; /* Espaciado dentro de la sección */
+    background-color: #fafafa; /* Fondo gris muy claro */
+    border: 0.0625rem solid #ddd; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
 }
-
 /* Título del Producto */
 .details-section h1 {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.625rem; /* 10px */
+    font-size: 1.5rem; 
+    margin-bottom: 0.625rem; 
 }
 
 /* Precio del Producto */
 .details-section .price {
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem; 
     color: #888;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; 
 }
 
 /* Formulario */
 .details-section form {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem; /* 10px */
+    gap: 0.625rem; 
 }
 
 .details-section form select {
-    padding: 0.625rem; /* 10px */
-    font-size: 1rem; /* 16px */
-    border-radius: 0.3125rem; /* 5px */
-    border: 0.0625rem solid #ddd; /* 1px */
+    padding: 0.625rem;
+    font-size: 1rem; 
+    border-radius: 0.3125rem; 
+    border: 0.0625rem solid #ddd; 
 }
 
+/* Botón del Formulario */
 .details-section form button {
-    background-color: #000;
-    color: #fff;
-    padding: 0.625rem; /* 10px */
-    font-size: 1rem; /* 16px */
-    border-radius: 0.3125rem; /* 5px */
-    border: none;
-    cursor: pointer;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color de texto blanco */
+    padding: 0.625rem; /* Espaciado dentro del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    border-radius: 0.3125rem; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
 }
 
+/* Efecto al pasar el ratón sobre el botón */
 .details-section form button:hover {
-    background-color: #333;
+    background-color: #333; /* Cambio de color de fondo cuando se pasa el ratón */
 }
 
 /* Media Queries para Responsividad */

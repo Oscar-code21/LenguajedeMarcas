@@ -1,275 +1,277 @@
+/* Reset General */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde estén dentro del tamaño total del elemento */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
 }
 
+/* Estilo General del Body */
 body {
-    font-family: "Arial", sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: Arial, sans-serif; /* Define la fuente de texto */
+    background-color: #f4f4f4; /* fondo de color blanco */
+    margin: 0; /* Elimna márgenes predeterminados */
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-direction: column; /* dirección del flex en columna */
     justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center; /* alineamos los items al centro */
+    min-height: 100vh; /* minimo de altura el maximo */
 }
 
 header {
-    background-color: #000;
-    padding: 0.9375rem 0;
-    width: 100%;
+    background-color: #000; /* fondo del header negro */
+    padding: 0.9375rem 0; 
+    width: 100%; /* coge el 100% de ancho del header */
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+    display: flex; /* usamos flexbox para organizar los elementos de una fila */
+    justify-content: space-between; /* espacio en los elementos */
+    align-items: center; /* alinear los elementos al centro */
+    max-width: 75rem; /* limite del ancho */
+    margin: 0 auto; /* centra la pagina */
+    padding: 0 1.25rem; /* espacio en el lado izquierdo y derecho */
 }
 
 .logo-container {
-    flex: 1;
+    flex: 1; /* asigna 1/3 del espacio disponible en el logo */
 }
 
 .logo-link {
-    display: inline-block;
+    display: inline-block; 
 }
 
 .logo {
-    width: 9.375rem;
-    height: auto;
+    width: 9.375rem; /* fija el ancho del logo */
+    height: auto; /* la altura ajustada automaticamente */
 }
 
 .categorias-links {
-    flex: 2;
-    text-align: center;
+    flex: 2; /* asigna 2/3 del espacio disponible */
+    text-align: center; /* alinea el texto al centro */
 }
 
 .categorias-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* elimina los estilos de la lista */
+    display: flex; /* organiza los elementos de la lista en fila */
+    justify-content: center; /* centra los elementos de la lista */
 }
 
 .categorias-list li {
-    margin: 0 1.25rem;
+    margin: 0 1.25rem; /* agrega margen horizontal */
 }
 
 .categorias-list a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: normal;
-    font-size: 0.875rem;
-    text-transform: uppercase;
+    text-decoration: none; /* elimina la decoración de los enlaces */
+    color: #fff; /* color blanco */
+    font-weight: normal; /* usa un peso de fuente normal */
+    font-size: 0.875rem; /* tamaño de fuente */
+    text-transform: uppercase; /* El texto en mayuscula */
 }
 
-.header-icons {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+.header-icons{ 
+    flex: 1;  /* asigna 1/3 del espacio disponible en el logo */
+    display: flex; /* organiza los elementos de la lista en fila */
+    justify-content: flex-end; /* alinea los iconos a la derecha */
 }
 
 .icon-link {
-    margin-left: 1.25rem;
-    display: inline-block;
+    margin-left: 1.25rem; /*agrega espacio entre los iconos */
+    display: inline-block; /* cada icono tiene dimensiones propias */
 }
 
 .header-icon {
-    width: 1.5rem;
-    height: auto;
+    width: 1.5rem; /*fija el ancho */
+    height: auto; /* ajusta automaticamente la altura */
 }
 
 main {
-    padding: 1.875rem 1.25rem;
+    padding: 1.875rem 1.25rem; /* agrega espacio internos en el main */
 }
 
 .products h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
-    color: #333;
+    font-size: 1.75rem; /*tamaño del texto */
+    margin-bottom: 1.25rem; /* espacio inferior */
+    text-align: center; /* centra el titulo del producto */
+    color: #333; /* el color en negro */
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    justify-items: center;
-    margin-top: 1.25rem;
+    display: grid; /* usa css grid para organzizar los productos */
+    grid-template-columns: repeat(3, 1fr); /* crea 3 columnas iguales */
+    gap: 1.25rem; /* espacio entre los elementos */
+    justify-items: center; /* centra los elementos */
+    margin-top: 1.25rem; /*  espacio margen superior */
 }
 
 .product-item {
-    background-color: white;
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-    aspect-ratio: 1;
-    height: 100%;
+    background-color: white; /* fondo blanco de los item */
+    padding: 1.25rem; /* espacio interno */
+    border-radius: 0.5rem; /* borde redondeados */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* sombra alrededor del producto */
+    text-align: center; /* centra el texto */
+    transition: transform 0.3s ease; /* efecto de transición */
+    aspect-ratio: 1; 
+    height: 100%; /* asegura que el elemento  ocupe el alto posible */
 }
 
 .product-item:hover {
-    transform: translateY(-0.3125rem);
+    transform: translateY(-0.3125rem); /* desplaza el producto hacia arriba */
 }
 
 .product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    max-width: 12.5rem;
-    margin-bottom: 0.625rem;
+    width: 100%; /* ocupa el 100% del ancho disponible */
+    height: auto; /* ajusta la altura */
+    border-radius: 0.5rem; /* borde redondeado */
+    max-width: 12.5rem; /* ancho maximo */
+    margin-bottom: 0.625rem; /* espaciado inferior */
 }
 
 .product-item h3 {
-    font-size: 1.125rem;
-    margin-top: 0.625rem;
-    color: #333;
+    font-size: 1.125rem; /* tamaño del texto */
+    margin-top: 0.625rem; /* espacio superior */
+    color: #333; /* color gris */
 }
 
 .product-item p {
-    font-size: 1rem;
-    color: #666;
-    margin-top: 0.3125rem;
+    font-size: 1rem; /* tamaño del texto */
+    color: #666; /* color del texto */
+    margin-top: 0.3125rem; /* espaciado superior */
 }
 
 .product-item button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 0.625rem 1.25rem;
-    font-size: 1rem;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-    margin-top: 0.625rem;
-    transition: background-color 0.3s;
+    background-color: #007BFF; /* boton con fondo azul */
+    color: white; /* texto blanco */
+    border: none; /* sin borde */
+    padding: 0.625rem 1.25rem; /* espacio interno del boton */
+    font-size: 1rem; /* tamaño del texto */ 
+    border-radius: 0.3125rem; /* borde redondeado del boton */
+    cursor: pointer; /* cambia el cursor */
+    margin-top: 0.625rem; /* espaciado superior */
+    transition: background-color 0.3s; /* transición para el cambio de color de fondo */
 }
 
 .product-item button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* cambia el fondo del hover a azul */
 }
 
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 1.25rem 0;
-    font-family: Arial, sans-serif;
-    font-size: 0.875rem;
-    text-align: center;
-    width: 100%;
+    background-color: #000; /* fondo negro */
+    color: #fff; /* texto color blanco */
+    padding: 1.25rem 0; /* espacio vertical arriba y abajo */
+    font-family: Arial, sans-serif; /* funte de la letra */
+    font-size: 0.875rem; /* tamaño de texto */
+    text-align: center; /* centra el texto */
+    width: 100%; /* ocupa todo el ancho */
 }
 
 .footer-cont {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+    max-width: 75rem; /* ancho maximo para centra contenido */
+    margin: 0 auto; /* centrado horizontalmente el contenedor */
+    padding: 0 1.25rem; /* espacio interno horizontal */
 }
 
 .footer-info h4 {
-    font-size: 1.125rem;
-    margin-bottom: 0.9375rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1.125rem; /* tamaño del texto encabezado */
+    margin-bottom: 0.9375rem; /* espaciado inferior */
+    font-weight: bold; /* texto en negrita */
+    text-transform: uppercase; /* convierte el texto en mayuscula */
 }
 
 .footer-info ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* elimina los estilos */
+    padding: 0; /* sin relleno interno */
 }
 
 .footer-info ul li {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.625rem; /* espaciado inferior entre elementos de la lista */
 }
 
 .footer-info ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.875rem;
+    text-decoration: none; /* elimina la decoración del texto */
+    color: #fff; /* color en blanco */
+    font-size: 0.875rem; /* tamaño del texto */
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 47.938rem) {
     .header-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* coloca los elementos del header en columna */
+        text-align: center; /* centra el texto */
     }
     .logo {
-        width: 7.5rem;
+        width: 7.5rem; /* reduce el tamaño del logo */
     }
     .categorias-list {
-        flex-direction: column;
-        margin-top: 0.625rem;
+        flex-direction: column; /* muestra las categorias en columnas */
+        margin-top: 0.625rem; /* añade un margen superior*/ 
     }
     .header-icons {
-        justify-content: center;
+        justify-content: center; /* centra los iconos del header */
     }
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* solo una columna para los productos */
     }
     .product-item {
-        width: 90%;
-        margin: 0 auto;
+        width: 90%; /* ocupa el ancho del ancho disponible */
+        margin: 0 auto; /* centra los productos horizontalmente */
     }
     .products h2 {
-        font-size: 1.375rem;
+        font-size: 1.375rem; /* reduce el tamaño del texto */
     }
     footer {
-        padding: 0.625rem 0;
+        padding: 0.625rem 0; /* Reduce el padding vertical del footer */
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 48rem) and (max-width: 61.938rem) {
     .header-container {
-        padding: 0 0.9375rem;
+        padding: 0 0.9375rem; /* reduce el padding horizontalmente del header */
     }
     .categorias-list {
-        font-size: 1rem;
+        font-size: 1rem; /*ajusta el tamaño de las categorias */
     }
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        grid-template-columns: repeat(2, 1fr); /* muestra los productos en dos columnas */
+    } 
     .product-item {
-        width: 95%;
+        width: 95%; /* ocupa el 95% del ancho disponible */
     }
     .products h2 {
-        font-size: 1.625rem;
+        font-size: 1.625rem; /* ajusta el tamaño del texto */
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 62rem) and (max-width: 74.938rem) {
     .header-container {
-        padding: 0 1.875rem;
+        padding: 0 1.875rem; /* padding horizontalmente */
     }
     .categorias-list {
-        font-size: 1.125rem;
+        font-size: 1.125rem; /* ajusta tamaño de las categorias */
     }
     .product-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* tres columnas para los productos*/
     }
     .product-item {
-        width: 100%;
+        width: 100%; /* ocupa todo el espacio disponible */
     }
     .products h2 {
-        font-size: 1.75rem;
+        font-size: 1.75rem; /* ajusta tamaño del titulo */
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75rem) {
     .header-container {
-        max-width: 75rem;
+        max-width: 75rem; /* ancho maximo del contenedor */
     }
     .categorias-list {
-        font-size: 1.25rem;
+        font-size: 1.25rem; /* aumenta el tamaño de las categorias */
     }
     .product-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* tres columnas para los productos */
     }
     .product-item {
-        width: 100%;
+        width: 100%; /* los productos ocupan todo el espacio disponible */
     }
     .products h2 {
-        font-size: 2rem;
+        font-size: 2rem; /* ajusta el tamaño del título */
     }
 }

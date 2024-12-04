@@ -109,7 +109,7 @@ main {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Sombreado centrado alrededor del elemento con desefoque 0.625rem y opacidad de 10% */
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
     aspect-ratio: 1; /* El ancho y el alto sea igual */
     height: 100%;
 }

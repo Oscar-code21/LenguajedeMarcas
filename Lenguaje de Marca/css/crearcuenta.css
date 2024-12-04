@@ -1,179 +1,199 @@
+/* Reset de estilo básico para todos los elementos */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten al tamaño total del elemento */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina los márgenes por defecto */
 }
-
+/* Estilos generales para el body */
 body {
-    font-family: "Arial", sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    margin: 0; /* Elimina márgenes predeterminados */
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    flex-direction: column; /* Establece una dirección vertical en el layout */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    align-items: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh; /* Hace que el body ocupe toda la altura de la ventana */
 }
 
+/* Estilos del header */
 header {
-    background-color: #000; 
-    padding: 0.9375rem 0; /* 15px */
-    width: 100%;
+    background-color: #000; /* Fondo negro */
+    padding: 0.9375rem 0; /* Espaciado arriba y abajo */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
 }
 
+/* Contenedor del header con espaciado entre elementos */
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 75rem; /* 1200px */
-    margin: 0 auto;
-    padding: 0 1.25rem; /* 20px */
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos del header */
+    align-items: center; /* Centra los elementos verticalmente */
+    max-width: 75rem; /* Ancho máximo del header */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 1.25rem; /* Espaciado dentro del header */
 }
 
+
+/* Contenedor del logo */
 .logo-container {
-    flex: 1;
+    flex: 1; /* Hace que el logo ocupe un 1/3 del espacio disponible */
 }
 
+/* Estilo del logo */
 .logo-link {
-    display: inline-block;
+    display: inline-block; /* Hace que el enlace sea un bloque en línea */
 }
+
 
 .logo {
-    width: 9.375rem; /* 150px */
-    height: auto;
+    width: 9.375rem; /* Ancho del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Estilos para los enlaces de categorías */
 .categorias-links {
-    flex: 2;
-    text-align: center;
+    flex: 2; /* Toma el doble de espacio que el logo */
+    text-align: center; /* Centra los enlaces de categorías */
 }
 
+
+/* Lista de categorías */
 .categorias-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Los elementos de la lista estarán en fila */
+    justify-content: center; /* Centra los elementos de la lista */
 }
 
 .categorias-list li {
-    margin: 0 1.25rem; /* 20px */
+    margin: 0 1.25rem; /* Espacio entre los elementos de la lista */
 }
-
 .categorias-list a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: normal;
-    font-size: 0.875rem; /* 14px */
-    text-transform: uppercase;
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff; /* Color de texto blanco */
+    font-weight: normal; /* Peso de la fuente normal */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
+/* Estilo para los iconos del header */
 .header-icons {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    flex: 1; /* Hace que los iconos ocupen el 1/3 del espacio disponible */
+    display: flex; /* Usamos flexbox para alinear los iconos */
+    justify-content: flex-end; /* Alinea los iconos a la derecha */
 }
 
+/* Estilo para los enlaces de los iconos */
 .icon-link {
-    margin-left: 1.25rem; /* 20px */
-    display: inline-block;
+    margin-left: 1.25rem; /* Espacio entre los iconos */
+    display: inline-block; /* Hace que los enlaces sean bloques en línea */
 }
 
 .header-icon {
-    width: 1.5rem; /* 24px */
-    height: auto;
+    width: 1.5rem; /* Ancho del icono */
+    height: auto; /* Mantiene la proporción del icono */
 }
 
+/* Estilo para el formulario de inicio de sesión */
 .iniciasesion {
-    background-color: white;
-    padding: 2.5rem 1.875rem; /* 40px 30px */
-    border-radius: 0.5rem; /* 8px */
-    width: 100%;
-    max-width: 25rem; /* 400px */
-    text-align: center;
-    margin-top: 3.125rem; /* 50px */
-    flex-grow: 1; 
+    background-color: white; /* Fondo blanco */
+    padding: 2.5rem 1.875rem; /* Espaciado dentro del formulario */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    width: 100%; /* El formulario ocupa todo el ancho */
+    max-width: 25rem; /* Ancho máximo del formulario */
+    text-align: center; /* Centra el texto */
+    margin-top: 3.125rem; /* Espacio arriba del formulario */
+    flex-grow: 1; /* Permite que el formulario crezca si es necesario */
 }
 
+/* Título dentro del header */
 header h1 {
-    text-align: center;
-    color: #333;
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 1.25rem; /* 20px */
+    text-align: center; /* Centra el título */
+    color: #333; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    margin-bottom: 1.25rem; /* Espacio debajo del título */
 }
 
+/* Estilo para el formulario de registro */
 .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem; /* 20px */
+    display: flex; /* Usamos flexbox para el layout */
+    flex-direction: column; /* Los elementos estarán en columna */
+    gap: 1.25rem; /* Espacio entre los elementos */
 }
-
+/* Agrupación de campos en el formulario */
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Los campos estarán en columna */
+    flex-direction: column; /* Alinea los campos verticalmente */
 }
 
+/* Estilo para las etiquetas */
 label {
-    font-size: 0.875rem; /* 14px */
-    color: #555;
-    margin-bottom: 0.3125rem; /* 5px */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    color: #555; /* Color gris para el texto */
+    margin-bottom: 0.3125rem; /* Espacio debajo de la etiqueta */
 }
 
+
+/* Estilo para los campos de entrada */
 input {
-    padding: 0.625rem; /* 10px */
-    margin-top: 0.3125rem; /* 5px */
-    font-size: 0.875rem; /* 14px */
-    border: 0.0625rem solid #555; /* 1px */
-    border-radius: 0.25rem; /* 4px */
+    padding: 0.625rem; /* Espaciado dentro del campo */
+    margin-top: 0.3125rem; /* Espacio encima del campo */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    border: 0.0625rem solid #555; /* Borde gris claro */
+    border-radius: 0.25rem; /* Bordes redondeados */
 }
 
+/* Estilo para el botón */
 button {
-    padding: 0.5rem 1rem; /* 8px 16px */
-    font-size: 0.875rem; /* 14px */
-    border: none;
-    border-radius: 0.25rem; /* 4px */
-    background-color: #fff;
-    color: black;
-    margin-top: 1.25rem; /* 20px */
+    padding: 0.5rem 1rem; /* Espaciado dentro del botón */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    color: black; /* Color de texto negro */
+    margin-top: 1.25rem; /* Espacio arriba del botón */
 }
 
+/* Estilo para el footer */
 footer {
-    background-color: #000; 
-    color: #fff;
-    padding: 1.25rem 0; /* 20px */
-    font-family: Arial, sans-serif;
-    font-size: 0.875rem; /* 14px */
-    text-align: center;
-    width: 100%;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color de texto blanco */
+    padding: 1.25rem 0; /* Espaciado dentro del footer */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 0.875rem; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* El footer ocupa todo el ancho */
 }
 
+/* Contenedor dentro del footer */
 .footer-cont {
-    max-width: 75rem; /* 1200px */
-    margin: 0 auto;
-    padding: 0 1.25rem; /* 20px */
+    max-width: 75rem; /* Ancho máximo del footer */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 1.25rem; /* Espaciado dentro del footer */
 }
 
+/* Estilo para los encabezados dentro del footer */
 .footer-info h4 {
-    font-size: 1.125rem; /* 18px */
-    margin-bottom: 0.9375rem; /* 15px */
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1.125rem; /* Tamaño de la fuente */
+    margin-bottom: 0.9375rem; /* Espacio debajo del encabezado */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
+/* Estilo para la lista dentro del footer */
 .footer-info ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
 }
 
 .footer-info ul li {
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem; /* Espacio entre los elementos de la lista */
 }
 
 .footer-info ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.875rem; /* 14px */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color blanco */
+    font-size: 0.875rem; /* Tamaño de la fuente */
 }
-
-
 
 
 
