@@ -244,8 +244,8 @@ footer {
         font-size: 1.625rem; /* Ajusta el tamaño del título */
     }
 }
-
-/* Media para ordenadores pequeños */
+/* Media Queries para Responsividad */
+/* Media para móviles */
 @media only screen and (min-width: 62rem) and (max-width: 74.9375rem) {
     .header-container {
         padding: 0 1.875rem; /* Mayor espacio en los laterales */

@@ -16,7 +16,7 @@ body {
     align-items: center; /* alineamos los items al centro */
     min-height: 100vh; /* minimo de altura el maximo */
 }
-
+/* estilo para el header */
 header {
     background-color: #000; /* fondo del header negro */
     padding: 0.9375rem 0; 
@@ -83,7 +83,7 @@ header {
     width: 1.5rem; /*fija el ancho */
     height: auto; /* ajusta automaticamente la altura */
 }
-
+/* estilo para el main */
 main {
     padding: 1.875rem 1.25rem; /* agrega espacio internos en el main */
 }
@@ -154,6 +154,7 @@ main {
     background-color: #0056b3; /* cambia el fondo del hover a azul */
 }
 
+/* estilo para el footer */
 footer {
     background-color: #000; /* fondo negro */
     color: #fff; /* texto color blanco */
@@ -191,7 +192,8 @@ footer {
     color: #fff; /* color en blanco */
     font-size: 0.875rem; /* tamaño del texto */
 }
-
+/* Media Queries para Responsividad */
+/* Media para móviles */
 @media only screen and (max-width: 47.938rem) {
     .header-container {
         flex-direction: column; /* coloca los elementos del header en columna */

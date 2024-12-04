@@ -38,8 +38,8 @@ main {
 }
 
 .product-section img {
-    width: 100%;
-    border-radius: 0.5rem; 
+    width: 100%; /* ocupa el 100% del ancho disponible */
+    border-radius: 0.5rem; /* borde redondeado */ 
 }
 
 /* Estilo para las Miniaturas */
@@ -60,7 +60,7 @@ main {
 }
 
 
-/* Estilo para la Sección de Detalles */
+
 .details-section {
     max-width: 31.25rem; /* Ancho máximo para la sección de detalles */
     flex: 1 1 40%; /* Ocupa el 40% del ancho */
@@ -69,31 +69,31 @@ main {
     border: 0.0625rem solid #ddd; /* Borde gris claro */
     border-radius: 0.5rem; /* Bordes redondeados */
 }
-/* Título del Producto */
+
 .details-section h1 {
-    font-size: 1.5rem; 
-    margin-bottom: 0.625rem; 
+    font-size: 1.5rem; /* tamaño del texto */
+    margin-bottom: 0.625rem;  /* espaciado inferior */
 }
 
-/* Precio del Producto */
+
 .details-section .price {
-    font-size: 1.25rem; 
-    color: #888;
-    margin-bottom: 1.25rem; 
+    font-size: 1.25rem; /* tamaño del texto */
+    color: #888; /* color del precio */
+    margin-bottom: 1.25rem; /* espaciado inferior */
 }
 
-/* Formulario */
+
 .details-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem; 
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-direction: column; /* dirección del flex en columna */
+    gap: 0.625rem; /* espacio */
 }
 
 .details-section form select {
-    padding: 0.625rem;
+    padding: 0.625rem; /* espaciado */
     font-size: 1rem; 
-    border-radius: 0.3125rem; 
-    border: 0.0625rem solid #ddd; 
+    border-radius: 0.3125rem; /* borde redondeado */ 
+    border: 0.0625rem solid #ddd; /* color del borde y espaciado */ 
 }
 
 /* Botón del Formulario */
@@ -114,138 +114,137 @@ main {
 /* Media Queries para Responsividad */
 
 /* Media para móviles (menos de 767px) */
-@media only screen and (max-width: 47.9375rem) { /* 767px */
+@media only screen and (max-width: 47.9375rem) { 
     body {
-        padding: 0.625rem; /* 10px */
+        padding: 0.625rem; /* reducimos el padding para el body */
     }
 
     main {
-        flex-direction: column;
-        padding: 0.625rem; /* 10px */
+        flex-direction: column; /* dirección del flex en columna */
+        padding: 0.625rem; /* padding para el main */
     }
 
     .product-section, .details-section {
-        max-width: 100%;
-        flex: 1 1 100%;
-        padding: 0.625rem; /* 10px */
+        max-width: 100%; /* maxima anchura ocupan */
+        flex: 1 1 100%; /* ajustamos la flexibilidad de las secciones */
+        padding: 0.625rem;  /* espaciado interno entre los elementos  */
     }
 
     .thumbnail-list {
-        flex-direction: column;
-        gap: 0.3125rem; /* 5px */
+        flex-direction: column; /* se organizan en columnas */
+        gap: 0.3125rem; /* pequeño espacio entre miniaturas */
     }
 
     .thumbnail-list img {
-        width: 3.75rem; /* 60px */
+        width: 3.75rem; /* tamaño reducido para imagenes de la miniatura */
     }
 
     .details-section h1 {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem; /* fuente mas pequeña */
     }
 
     .details-section .price {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.125rem; /* fuente ajustada para el precio */
     }
 
     .details-section form select, .details-section form button {
-        font-size: 0.875rem; /* 14px */
-        padding: 0.5rem; /* 8px */
+        font-size: 0.875rem; /* tamaño reducido para las fuentes  */
+        padding: 0.5rem; /* padding reducido para los elementos de formulario*/
     }
 }
 
 /* Media para tablets (768px - 991px) */
-@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) { /* 768px - 991px */
+@media only screen and (min-width: 48rem) and (max-width: 61.9375rem) { 
     main {
-        flex-direction: row;
-        gap: 1.25rem; /* 20px */
+        flex-direction: row; /* cambiamos a un diseño horizontal */
+        gap: 1.25rem; /* espaciado entre las secciones principales */
     }
 
     .product-section, .details-section {
-        max-width: 45%;
-        flex: 1 1 45%;
+        max-width: 45%; /* ocupen el ancho disponible*/
+        flex: 1 1 45%; /* ajustamos la flexibilidad para tener dos columnas */
     }
 
     .thumbnail-list {
-        gap: 0.5rem; /* 8px */
+        gap: 0.5rem; /* mas espacio en las miniaturas */
     }
 
     .thumbnail-list img {
-        width: 4.375rem; /* 70px */
+        width: 4.375rem; /* tamaños mas grande3 para las miniaturas */
     }
 
     .details-section h1 {
-        font-size: 1.375rem; /* 22px */
+        font-size: 1.375rem; /* titulo del producti mas grande */
     }
 
     .details-section .price {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.125rem; /* fuente ajustada para mostrar el precio */
     }
 
     .details-section form select, .details-section form button {
-        font-size: 0.9375rem; /* 15px */
-        padding: 0.5625rem; /* 9px */
+        font-size: 0.9375rem; /* mayor tamaño */
+        padding: 0.5625rem; /* espaciado interno ajustado */
     }
 }
 
 /* Media para ordenadores pequeños (992px - 1199px) */
-@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) { /* 992px - 1199px */
+@media only screen and (min-width: 62rem) and (max-width: 74.9375rem) { 
     main {
-        padding: 1.25rem; /* 20px */
+        padding: 1.25rem; /* mayor espacio */
     }
 
     .product-section, .details-section {
-        max-width: 48%;
-        flex: 1 1 48%;
+        max-width: 48%; /* las secciones ocupan el 48% del ancho */
+        flex: 1 1 48%; /* diseño de dos columnas */
     }
 
     .thumbnail-list img {
-        width: 5rem; /* 80px */
+        width: 5rem; /* miniaturas más grande para mayor visibilidad */
     }
 
     .details-section h1 {
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.5rem; /* titulo mas grande */
     }
-
     .details-section .price {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem; /* fuente mayor para el precio */
     }
 
     .details-section form select, .details-section form button {
-        font-size: 1rem; /* 16px */
-        padding: 0.625rem; /* 10px */
+        font-size: 1rem; /* tamaño estandar */
+        padding: 0.625rem; /* espaciado interno estandar */
     }
 }
 
 /* Media para ordenadores de escritorio grandes (1200px+) */
-@media only screen and (min-width: 75rem) { /* 1200px */
+@media only screen and (min-width: 75rem) { 
     main {
-        max-width: 75rem; /* 1200px */
-        padding: 1.25rem; /* 20px */
+        max-width: 75rem; /* ancho maximo */
+        padding: 1.25rem; /* espaciado adicional para que este mas limpio */
     }
 
     .product-section, .details-section {
-        max-width: 31.25rem; /* 500px */
-        flex: 1 1 45%;
+        max-width: 31.25rem; /* limite de ancho */
+        flex: 1 1 45%; /* cada sección ocupa el 45% de ancho */
     }
 
     .thumbnail-list {
-        gap: 0.625rem; /* 10px */
-    }
-
+        gap: 0.625rem; /* espaciado mas grande */
+    }   
     .thumbnail-list img {
-        width: 5rem; /* 80px */
+        width: 5rem; /* tamaño mas grande */
     }
 
     .details-section h1 {
-        font-size: 1.625rem; /* 26px */
+        font-size: 1.625rem; /*tamaño del nombre producto*/
     }
 
     .details-section .price {
-        font-size: 1.375rem; /* 22px */
+        font-size: 1.375rem; /* fuennte mayor para el precio */
     }
 
     .details-section form select, .details-section form button {
-        font-size: 1rem; /* 16px */
-        padding: 0.75rem; /* 12px */
+        font-size: 1rem;/* tamaño estandar para botones y selectores */
+        padding: 0.75rem; /* espaciado interno mayor */
     }
 }
+
