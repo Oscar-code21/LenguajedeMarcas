@@ -96,7 +96,7 @@ main {
 }
 
 .product-grid {
-    display: grid; /* usa css grid para organzizar los productos */
+    display: grid; /*  css grid para organzizar los productos */
     grid-template-columns: repeat(3, 1fr); /* crea 3 columnas iguales */
     gap: 1.25rem; /* espacio entre los elementos */
     justify-items: center; /* centra los elementos */
@@ -110,7 +110,7 @@ main {
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* sombra alrededor del producto */
     text-align: center; /* centra el texto */
     transition: transform 0.3s ease; /* efecto de transición */
-    aspect-ratio: 1; 
+    aspect-ratio: 1; /* El ancho y el alto sea igual */
     height: 100%; /* asegura que el elemento  ocupe el alto posible */
 }
 
